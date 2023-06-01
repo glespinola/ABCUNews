@@ -1,0 +1,11 @@
+:root {
+  --tertiary: #ffa500;
+  --secondary: #fff;
+  --primary: #000;
+}
+
+body {
+  background-image: url('../../img/worldnews1.jpg');
+  background-size: cover;
+  max-width: 1200px;
+}
