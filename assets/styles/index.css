@@ -1,0 +1,12 @@
+@import './reset.css';
+@import './normalize.css';
+@import './components/body.css';
+@import './components/navbar.css';
+@import './components/carrusel.css';
+@import './components/hero.css';
+@import './components/articleCategorias.css';
+@import './components/main.css';
+@import './components/footer.css';
+@import './components/aboutUs.css';
+@import './components/contact.css';
+@import './components/notfound.css';

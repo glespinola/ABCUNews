@@ -1,0 +1,71 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+/* Set default font styles */
+body {
+  font-family: 'Poppins', sans-serif, Arial;
+  font-size: 16px;
+  line-height: 1.5;
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  box-sizing: border-box;
+}
+
+/* Reset list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Reset hyperlink styles */
+a {
+  text-decoration: none;
+}
+
+/* Reset form element styles */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Reset table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
