@@ -41,9 +41,71 @@
     </nav>
     <a href="signin.html" class="header__cta">Sign in</a>
   </header>
-  <section class="not__found">
-    <h2>Pagina en Mantenimiento</h2>
-    <img src="../assets/img/notfound.svg" alt="Not Found">
+  <section class="section__sign">
+    <div class="form">
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="signup">
+          <h1>Sign Up for Free</h1>
+          <form action="/" id="registro">
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  First Name<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+              <div class="field-wrap">
+                <label>
+                  Last Name<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+            </div>
+            <div class="field-wrap">
+              <label>
+                Email Address<span class="req">*</span>
+              </label>
+              <input type="email" required autocomplete="off" />
+            </div>
+            <div class="field-wrap">
+              <label>
+                Set A Password<span class="req">*</span>
+              </label>
+              <input type="password" required autocomplete="off" />
+            </div>
+            <button type="submit" class="button button-block">Get Started</button>
+          </form>
+        </div>
+        <div id="login">
+          <h1>Welcome Back!</h1>
+          <form action="/">
+            <div class="field-wrap">
+              <label>
+                Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+            <div class="field-wrap">
+              <label>
+                Email Address<span class="req">*</span>
+              </label>
+              <input type="email" required autocomplete="off" />
+            </div>
+            <div class="field-wrap">
+              <label>
+                Password<span class="req">*</span>
+              </label>
+              <input type="password" required autocomplete="off" />
+            </div>
+            <button class="button button-block">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
   <footer>
     <div class="footer__container">
@@ -91,9 +153,10 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    <div class="author">Made with 💓 by <a href="https//github.com/glespinola" target="_blank">glespinola</a> </div>
+    <div class="author">Made with 💓 by <a href="https://github.com/glespinola" target="_blank">glespinola</a> </div>
   </footer>
   <script src="https://kit.fontawesome.com/db9f70d841.js" crossorigin="anonymous"></script>
+  <script src="../js/localStorage.js"></script>
   <script src="../js/animations.js"></script>
 </body>
 

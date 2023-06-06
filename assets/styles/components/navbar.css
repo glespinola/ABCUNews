@@ -46,7 +46,7 @@
 }
 
 .header__cta:hover {
-  transform: scale(.9);
+  background: #ffd700;
 }
 
 .header__button {
