@@ -57,7 +57,10 @@ fetchArticles(10, 'general', 'es')
           <p class="description">${article.description}</p>
           <a href="${article.url}"
             target="_blank" rel="noopener"
-            class="url">${article.url}</a>
+            class="url">Leer mas.</a>
+        </div>
+        <div class="star">
+            <i class="fa-solid fa-star" title="Agregar a favoritos"></i>
         </div>
       `;
 
@@ -66,13 +69,38 @@ fetchArticles(10, 'general', 'es')
 
       const titleElement = elementCard.querySelector('.title');
       const descriptionElement = elementCard.querySelector('.description');
-      const urlElement = elementCard.querySelector('.url');
 
       adjustTextSize(titleElement);
       adjustTextSize(descriptionElement);
-      adjustTextSize(urlElement);
     });
   })
   .catch(err => {
     console.error(err);
   });
+
+
+let articleContainer = document.querySelector('.article__container');
+
+articleContainer.addEventListener('click', (e) => {
+  let targetElement = e.target.closest('.article__categorias');
+  if (targetElement) {
+    let dataText = targetElement.getAttribute('data-text');
+    let urlText = '';
+
+    switch (dataText) {
+      case 'Política':
+        urlText = './pages/policy.html'
+        break;
+      case 'Deportes':
+        urlText = './pages/sports.html'
+        break;
+      case 'Economía':
+        urlText = './pages/economy.html'
+        break;
+      case 'Mundo':
+        urlText = './pages/world.html'
+        break;
+    }
+    window.location.href = urlText;
+  }
+})
