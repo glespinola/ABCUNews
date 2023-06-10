@@ -110,4 +110,3 @@ function tabClickEvent(e) {
 
   document.querySelector(target).style.display = 'block';
 }
-

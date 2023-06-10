@@ -1,10 +1,16 @@
 .section__general {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.section__gereral-card-container {
+.section__sports-card,
+.section__world-card,
+.section__policy-card,
+.section__economy-card {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
 }
 

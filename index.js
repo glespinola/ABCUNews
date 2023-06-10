@@ -77,30 +77,33 @@ fetchArticles(10, 'general', 'es')
   .catch(err => {
     console.error(err);
   });
+document.addEventListener('DOMContentLoaded', () => {
+  let articleContainer = document.querySelector('.article__container');
 
+  articleContainer.addEventListener('click', (e) => {
+    let targetElement = e.target.closest('.article__categorias');
+    if (targetElement) {
+      let dataText = targetElement.getAttribute('data-text');
+      let urlText = '';
 
-let articleContainer = document.querySelector('.article__container');
-
-articleContainer.addEventListener('click', (e) => {
-  let targetElement = e.target.closest('.article__categorias');
-  if (targetElement) {
-    let dataText = targetElement.getAttribute('data-text');
-    let urlText = '';
-
-    switch (dataText) {
-      case 'Política':
-        urlText = './pages/policy.html'
-        break;
-      case 'Deportes':
-        urlText = './pages/sports.html'
-        break;
-      case 'Economía':
-        urlText = './pages/economy.html'
-        break;
-      case 'Mundo':
-        urlText = './pages/world.html'
-        break;
+      switch (dataText) {
+        case 'Política':
+          urlText = './pages/policy.html'
+          break;
+        case 'Deportes':
+          urlText = './pages/sports.html'
+          break;
+        case 'Economía':
+          urlText = './pages/economy.html'
+          break;
+        case 'Mundo':
+          urlText = './pages/world.html'
+          break;
+      }
+      window.location.href = urlText;
     }
-    window.location.href = urlText;
-  }
+  })
 })
+
+
+

@@ -28,8 +28,20 @@ footer {
   cursor: pointer;
 }
 
-.footer__redes-container>i:hover {
-  color: var(--primary);
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-instagram:hover {
+  color: #e1306c;
+}
+
+.fa-tiktok:hover {
+  color: #000000;
 }
 
 .footer__indice-link {
