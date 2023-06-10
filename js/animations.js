@@ -49,3 +49,64 @@ document.querySelectorAll('.carrousel').forEach(carrousel => {
   setInterval(nextItem, 10000);
 });
 
+let formInputs = document.querySelectorAll('.form input, .form textarea');
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener('keyup', inputEvent);
+  formInputs[i].addEventListener('blur', inputEvent);
+  formInputs[i].addEventListener('focus', inputEvent);
+}
+
+function inputEvent(e) {
+  let input = e.target,
+    label = input.previousElementSibling;
+
+  if (e.type === 'keyup') {
+    if (input.value === '') {
+      label.classList.remove('active', 'highlight');
+    } else {
+      label.classList.add('active', 'highlight');
+    }
+  } else if (e.type === 'blur') {
+    if (input.value === '') {
+      label.classList.remove('active', 'highlight');
+    } else {
+      label.classList.remove('highlight');
+    }
+  } else if (e.type === 'focus') {
+    if (input.value === '') {
+      label.classList.remove('highlight');
+    } else {
+      label.classList.add('highlight');
+    }
+  }
+}
+
+let tabLinks = document.querySelectorAll('.tab a');
+for (let i = 0; i < tabLinks.length; i++) {
+  tabLinks[i].addEventListener('click', tabClickEvent);
+}
+
+function tabClickEvent(e) {
+  e.preventDefault();
+
+  let link = e.target,
+    parent = link.parentNode,
+    siblings = parent.parentNode.children,
+    target = link.getAttribute('href');
+
+  parent.classList.add('active');
+  for (let i = 0; i < siblings.length; i++) {
+    if (siblings[i] !== parent) {
+      siblings[i].classList.remove('active');
+    }
+  }
+
+  let tabContents = document.querySelectorAll('.tab-content > div');
+  for (let i = 0; i < tabContents.length; i++) {
+    if (tabContents[i] !== target) {
+      tabContents[i].style.display = 'none';
+    }
+  }
+
+  document.querySelector(target).style.display = 'block';
+}

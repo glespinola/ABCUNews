@@ -1,0 +1,21 @@
+.section__general {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__sports-card,
+.section__world-card,
+.section__policy-card,
+.section__economy-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section__general-title {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}

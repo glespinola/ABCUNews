@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/styles/index.css">
-  <title>ABCUN News</title>
+  <link rel="shortcut icon" href="./assets/img/Logo ABCUNEWS.png" type="image/x-icon">
+  <title>ABCU News</title>
 </head>
 
 <body>
   <header class="header">
-    <img src="./assets/img/newspaper.png" alt="ABCUN" class="header__logo">
+    <img src="./assets/img/Logo ABCUNEWS.png" alt="ABCUN" class="header__logo">
     <div class="nav-button">
       <div id="burger">
         <span></span>
@@ -29,7 +30,7 @@
           <a href="./pages/news.html" class="header__nav-item">Noticias</a>
         </li>
         <li class="header__nav-items">
-          <a href="./pages/sports.html" class="header__nav-item">Deportes</a>
+          <a href="./pages/favorites.html" class="header__nav-item">Favoritos</a>
         </li>
         <li class="header__nav-items">
           <a href="./pages/aboutus.html" class="header__nav-item">Sobre nosotros</a>
@@ -41,6 +42,7 @@
     </nav>
     <a href="./pages/signin.html" class="header__cta">Sign in</a>
   </header>
+
   <section class="hero">
     <div class="hero__info">
       <h1 class="hero__title">¡Bienvenido a ABCUN News!</h1>
@@ -53,18 +55,16 @@
     <div class="carrousel">
       <h3>Noticas Destacadas</h3>
       <div class="carrousel__item">
-
       </div>
       <div class="carrousel__item">
-
       </div>
       <div class="carrousel__item">
-
       </div>
       <div class="carrousel__nav">
       </div>
     </div>
   </section>
+
   <article class="article__container">
     <div class="article__categorias" data-text="Política">
       <img src="./assets/img/politica.jpg" alt="Politica" class="article__img">
@@ -79,19 +79,39 @@
       <img src="./assets/img/internacional.jpg" alt="Mundo" class="article__img">
     </div>
   </article>
+
   <main class="main">
     <h2 class="main__title">Últimas noticias</h2>
     <div id="main__container">
       <div class="main__card-container">
+        <div class="card">
+          <div class="image-container">
+            <img class="image"
+              src="https://peru21.pe/resizer/JFQOpXAOr_UtqeMGnadGmnpGzog=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ND2ZTS2QLJBGXL5OJZC6FGS6YE.jpg"
+              alt="Preview Image">
+          </div>
+          <div class="content">
+            <h2 class="title" style="font-size: 12px;">‘Gato’ Cuba: Ale Venturo anuncia radical decisión por el bien de
+              sus
+              hijas en medio de su separación</h2>
+            <p class="description" style="font-size: 15px;">A la empresaria Ale Venturo no le habría gustado para nada
+              que el
+              fin de su relación con el futbolista se ventile en los programas de espectáculos.</p>
+            <a href="https://peru21.pe/espectaculos/local/gato-cuba-ale-venturo-anuncia-radical-decision-por-el-bien-de-sus-hijas-en-medio-de-su-separacion-instagram-rodrigo-cuba-espectaculos-noticia/"
+              target="_blank" rel="noopener" class="url">Leer mas.</a>
+          </div>
+          <div class="star">
+            <i class="fa-solid fa-star" title="Agregar a favoritos"></i>
+          </div>
+        </div>
       </div>
     </div>
-
   </main>
 
   <footer>
     <div class="footer__container">
       <div class="footer__info">
-        <img class='footer__img' src="./assets/img/newspaper.png" alt="Logo ABCUN" />
+        <img class='footer__img' src="./assets/img/Logo ABCUNEWS.png" alt="Logo ABCUN" />
         <div class="footer__redes-container">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-twitter"></i>
@@ -101,19 +121,19 @@
         <div class="footer__indice">
           <ul class="footer__indice-list">
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Inicio</a>
+              <a href="/" class="footer__indice-link">Inicio</a>
             </li>
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Noticias</a>
+              <a href="./pages/news.html" class="footer__indice-link">Noticias</a>
             </li>
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Deportes</a>
+              <a href="./pages/favorites.html" class="footer__indice-link">Favoritos</a>
             </li>
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Sobre Nosotros</a>
+              <a href="./pages/aboutus.html" class="footer__indice-link">Sobre Nosotros</a>
             </li>
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Contacto</a>
+              <a href="./pages/contact.html" class="footer__indice-link">Contacto</a>
             </li>
           </ul>
         </div>
@@ -134,10 +154,11 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    <div class="author">Made with 💓 by <a href="https//github.com/glespinola" target="_blank">glespinola</a> </div>
+    <div class="author">Made with 💓 by <a href="https://github.com/glespinola" target="_blank">glespinola</a> </div>
   </footer>
-  <!-- <script type="module" src="./API/API.js"></script> -->
+  <script type="module" src="./API/API.js"></script>
   <script type="module" src="./index.js"></script>
+  <script src="./js/localStorage.js"></script>
   <script src="./js/animations.js"></script>
   <script src="https://kit.fontawesome.com/db9f70d841.js" crossorigin="anonymous"></script>
 </body>

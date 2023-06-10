@@ -8,7 +8,7 @@ footer {
 .footer__container {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 10px;
 }
 
 .footer__info {
@@ -28,8 +28,20 @@ footer {
   cursor: pointer;
 }
 
-.footer__redes-container>i:hover {
-  color: var(--primary);
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-instagram:hover {
+  color: #e1306c;
+}
+
+.fa-tiktok:hover {
+  color: #000000;
 }
 
 .footer__indice-link {
@@ -44,8 +56,9 @@ footer {
 }
 
 .footer__img {
-  width: 4rem;
+  width: 8rem;
   height: auto;
+  padding: 0;
 }
 
 .footer__newsletter-container {
@@ -92,6 +105,13 @@ footer {
   cursor: pointer;
   margin-left: 1rem;
 }
+
+.footer__map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .author {
   text-align: center;

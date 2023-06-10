@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/img/Logo ABCUNEWS.png" type="image/x-icon">
   <link rel="stylesheet" href="../assets/styles/index.css">
-  <title>ABCUN Sign in</title>
+  <title>ABCU Sign in</title>
 </head>
 
 <body>
   <header class="header">
-    <img src="../assets/img/newspaper.png" alt="ABCUN" class="header__logo">
+    <img src="../assets/img/Logo ABCUNEWS.png" alt="ABCUN" class="header__logo">
     <div class="nav-button">
       <div id="burger">
         <span></span>
@@ -26,10 +27,10 @@
           <a href="/" class="header__nav-item">Inicio</a>
         </li>
         <li class="header__nav-items">
-          <a href="news.html" class="header__nav-item">Noticias</a>
+          <a href="./news.html" class="header__nav-item">Noticias</a>
         </li>
         <li class="header__nav-items">
-          <a href="./sports.html" class="header__nav-item">Deportes</a>
+          <a href="./favorites.html" class="header__nav-item">Favoritos</a>
         </li>
         <li class="header__nav-items">
           <a href="./aboutus.html" class="header__nav-item">Sobre nosotros</a>
@@ -41,14 +42,76 @@
     </nav>
     <a href="signin.html" class="header__cta">Sign in</a>
   </header>
-  <section class="not__found">
-    <h2>Pagina en Mantenimiento</h2>
-    <img src="../assets/img/notfound.svg" alt="Not Found">
+  <section class="section__sign">
+    <div class="form">
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="signup">
+          <h1>Sign Up for Free</h1>
+          <form action="/" id="registro">
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  First Name<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+              <div class="field-wrap">
+                <label>
+                  Last Name<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+            </div>
+            <div class="field-wrap">
+              <label>
+                Email Address<span class="req">*</span>
+              </label>
+              <input type="email" required autocomplete="off" />
+            </div>
+            <div class="field-wrap">
+              <label>
+                Set A Password<span class="req">*</span>
+              </label>
+              <input type="password" required autocomplete="off" />
+            </div>
+            <button type="submit" class="button button-block">Get Started</button>
+          </form>
+        </div>
+        <div id="login">
+          <h1>Welcome Back!</h1>
+          <form action="/">
+            <div class="field-wrap">
+              <label>
+                Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+            <div class="field-wrap">
+              <label>
+                Email Address<span class="req">*</span>
+              </label>
+              <input type="email" required autocomplete="off" />
+            </div>
+            <div class="field-wrap">
+              <label>
+                Password<span class="req">*</span>
+              </label>
+              <input type="password" required autocomplete="off" />
+            </div>
+            <button class="button button-block">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
   <footer>
     <div class="footer__container">
       <div class="footer__info">
-        <img class='footer__img' src="../assets/img/newspaper.png" alt="Logo ABCUN" />
+        <img class='footer__img' src="../assets/img/Logo ABCUNEWS.png" alt="Logo ABCUN" />
         <div class="footer__redes-container">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-twitter"></i>
@@ -58,19 +121,19 @@
         <div class="footer__indice">
           <ul class="footer__indice-list">
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Inicio</a>
+              <a href="/" class="footer__indice-link">Inicio</a>
             </li>
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Noticias</a>
+              <a href="./news.html" class="footer__indice-link">Noticias</a>
             </li>
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Deportes</a>
+              <a href="./favorites.html" class="footer__indice-link">Favoritos</a>
             </li>
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Sobre Nosotros</a>
+              <a href="./aboutus.html" class="footer__indice-link">Sobre Nosotros</a>
             </li>
             <li class="footer__indice-item">
-              <a href="#" class="footer__indice-link">Contacto</a>
+              <a href="./contact.html" class="footer__indice-link">Contacto</a>
             </li>
           </ul>
         </div>
@@ -91,9 +154,10 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    <div class="author">Made with 💓 by <a href="https//github.com/glespinola" target="_blank">glespinola</a> </div>
+    <div class="author">Made with 💓 by <a href="https://github.com/glespinola" target="_blank">glespinola</a> </div>
   </footer>
   <script src="https://kit.fontawesome.com/db9f70d841.js" crossorigin="anonymous"></script>
+  <script src="../js/localStorage.js"></script>
   <script src="../js/animations.js"></script>
 </body>
 

@@ -2,19 +2,20 @@
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
-  background-color: #fff;
+  background: rgba(19, 35, 47, 0.9);
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
   border-radius: 10px;
 }
 
 .contact__title {
   font-size: 24px;
   margin: 0 0 20px;
-  color: #000;
+  color: #fff;
 }
 
 .contact__description {
   margin: 0;
-  color: #000;
+  color: #fff;
 }
 
 .contact__form {
@@ -28,15 +29,23 @@
 .contact__form-label {
   display: block;
   margin-bottom: 5px;
-  color: #000;
+  color: #fff;
 }
 
 .contact__form-input,
 .contact__form-textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid #ddd;
   border-radius: 4px;
+  background: none;
+  color: #fff;
+}
+
+.contact__form-input:focus,
+.contact__form-textarea:focus {
+  outline: 0;
+  border-color: #ffa500;
 }
 
 .contact__form-button {

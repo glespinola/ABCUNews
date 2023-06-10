@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/img/Logo ABCUNEWS.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+  <title>ABCU Mundo</title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="../assets/img/Logo ABCUNEWS.png" alt="ABCUN" class="header__logo">
+    <div class="nav-button">
+      <div id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-items">
+          <a href="/" class="header__nav-item">Inicio</a>
+        </li>
+        <li class="header__nav-items">
+          <a href="./news.html" class="header__nav-item">Noticias</a>
+        </li>
+        <li class="header__nav-items">
+          <a href="./favorites.html" class="header__nav-item">Favoritos</a>
+        </li>
+        <li class="header__nav-items">
+          <a href="./aboutus.html" class="header__nav-item">Sobre nosotros</a>
+        </li>
+        <li class="header__nav-items">
+          <a href="./contact.html" class="header__nav-item">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="./signin.html" class="header__cta">Sign in</a>
+  </header>
+  <section class="section__general">
+    <h2 class="section__general-title">Noticas del Mundo</h2>
+    <div id="section__world-card-container">
+      <div class="section__world-card">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer__container">
+      <div class="footer__info">
+        <img class='footer__img' src="../assets/img/Logo ABCUNEWS.png" alt="Logo ABCUN" />
+        <div class="footer__redes-container">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="footer__indice">
+          <ul class="footer__indice-list">
+            <li class="footer__indice-item">
+              <a href="/" class="footer__indice-link">Inicio</a>
+            </li>
+            <li class="footer__indice-item">
+              <a href="news.html" class="footer__indice-link">Noticias</a>
+            </li>
+            <li class="footer__indice-item">
+              <a href="./favorites.html" class="footer__indice-link">Favoritos</a>
+            </li>
+            <li class="footer__indice-item">
+              <a href="./aboutus.html" class="footer__indice-link">Sobre Nosotros</a>
+            </li>
+            <li class="footer__indice-item">
+              <a href="./contact.html" class="footer__indice-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__newsletter-container">
+        <h2 class="footer__newsletter-title">Suscríbete</h2>
+        <p class="footer__newsletter-text">Recibe las últimas noticias y novedades</p>
+        <div class="footer__newsletter-form">
+          <input class="footer__newsletter-input" type="text" placeholder="Ingrese su email">
+          <i class="fa-solid fa-paper-plane footer__newsletter-button"></i>
+        </div>
+      </div>
+      <div class="footer__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52524.930454861205!2d-58.398991841454496!3d-34.63428809112617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca2387c06561%3A0x27fd29256c2919c3!2sPatio%20de%20Los%20Lecheros!5e0!3m2!1ses-419!2sar!4v1685652774781!5m2!1ses-419!2sar"
+          width="300" height="250" style="border-radius:10px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="author">Made with 💓 by <a href="https://github.com/glespinola" target="_blank">glespinola</a> </div>
+  </footer>
+  <script type="module" src="../index.js"></script>
+  <script type="module" src="../js/topNews.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="https://kit.fontawesome.com/db9f70d841.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
